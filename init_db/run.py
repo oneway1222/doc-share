@@ -27,6 +27,6 @@ def main():
 
     # Create tables
     init_tables.init(mycursor)
-
+    mydb.commit()
 if __name__ == "__main__":
     main()
