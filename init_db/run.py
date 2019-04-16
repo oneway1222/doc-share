@@ -8,10 +8,10 @@ import init_tables
 # Configuration
 # Please change config below 
 config = {
-    "user": "root",
-    "password": "root",
-    "host": "127.0.0.1",
-    "port": "3306"
+    'user': "root",
+    'password': "root",
+    'host': "127.0.0.1",
+    'port': "3306"
 }
 db_name = "docshare"
 
@@ -28,5 +28,5 @@ def main():
     # Create tables
     init_tables.init(mycursor)
     mydb.commit()
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
