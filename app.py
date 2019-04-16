@@ -19,6 +19,14 @@ dbcontroller = DatabaseController(config)
 def sign_in():
     return render_template('sign_in.html')
 
+@app.route('/guest_docs', methods=['GET'])
+def guest_docs():
+    return render_template('guest_docs.html')
+
+@app.route('/about', methods=['GET'])
+def about():
+    return render_template('about.html')
+
 
 class RegForm(FlaskForm):
     username = StringField("Please enter your username", validators=[validators.Length(min=1, max=10)])
