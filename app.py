@@ -16,8 +16,8 @@ config = {
 dbcontroller = DatabaseController(config)
 
 @app.route('/', methods=['GET', 'POST'])
-def index():
-    return render_template('index.html')
+def sign_in():
+    return render_template('sign_in.html')
 
 
 class RegForm(FlaskForm):
